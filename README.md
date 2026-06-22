@@ -20,58 +20,52 @@ windows-forms
 winforms 
  -->
 
-# PROJECT NAME
+# WallPin
 
-### PROJECT DESCRIPTION
+### A lightweight command-line utility to change the Windows desktop wallpaper with support for all layout styles (Fill, Fit, Center, etc.) and context menu integration via optional shell scripts.
 
 ------------------
 
 ## 👋 Introduction
 
-INTRODUCTION TEXT
+**WallPin** lets you set any supported image as your Windows desktop wallpaper. It doesn't run in the background, it doesn't consume resources, and it works completely silently without even showing a console window. If an operation fails or the arguments are invalid, the tool will display a standard Windows message box showing the exact error details.
+
+## 💡 Why WallPin?
+
+I decided to develop this application because Windows 10 has a deeply annoying design flaw: when you use the built-in "Set as desktop background" menu command, Windows forces a global system refresh that resets the scrollbar position in all open File Explorer windows back to the very top.
+
+If you are working inside a directory with thousands of files and you have an image selected near the middle or the bottom, Windows completely breaks your user experience by throwing you back to the top of the list. On top of that, the built-in menu command doesn't even let you choose the wallpaper style (Fill, Fit, Center, etc.).
+
+**WallPin** solves both issues. It updates your desktop wallpaper instantly without affecting your open File Explorer windows, leaving your selection and scrollbars exactly where they are, and gives you full control over the wallpaper layout style.
 
 ## 👌 Features
 
-FEATURES TEXT
+* **All Styles Supported:** Supports `center`, `tile`, `stretch`, `fit`, `fill`, and `span` using either their names or standard Windows IDs.
+* **Cascading Context Menu:** Includes a batch script to add a clean "Set as desktop background" sub-menu directly into the Windows Explorer right-click menu for supported image files.
+
+> ⚠️ **Please note:** Adding these registry keys does not delete or corrupt the original built-in Windows menu commands; it simply overrides them safely. A separate script is also included to easily remove WallPin's registry keys and restore built-in Windows menu commands back to its original state.
 
 ## 🖼️ Screenshots
 
-![screenshot](/Images/screenshot.png)
+![screenshot](/Images/screenshot1.png)
 
-## 🎦 Videos
-
-<!-- Download a recorded video by clicking [here](/Video/video.mp4) -->
-
-<!-- See a recorded video by clicking on the following button:
-[![PROJECT_NAME DEMO VIDEO](Images/demo_video.jpg)](https://www.youtube.com/watch?v=XXXXXXXXX)  -->
+![screenshot](/Images/screenshot2.png)
 
 ## 📝 Requirements
 
-- Microsoft Windows OS.
+- Microsoft Windows OS with .NET Framework 4.8.
 
 ## 🤖 Getting Started
 
-Download the latest compilation by clicking [here](https://github.com/ElektroStudios/PROJECT_NAME/releases/latest).
+Download the latest release by clicking [here](https://github.com/ElektroStudios/WallPin-Set-Desktop-Wallpaper/releases/latest) and start using it.
 
 ## 🔄 Change Log
 
 Explore the complete list of changes, bug fixes, and improvements across different releases by clicking [here](/Docs/CHANGELOG.md).
 
-## 🏆 Credits
-
-This work relies on the following resources: 
-
- - [.NET Framework](https://dotnet.microsoft.com/en-us/download/dotnet-framework)
-
-## ⚠️ Disclaimer:
-
-This Work (the repository and the content provided in) is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the Work or the use or other dealings in the Work.
-
-This Work has no affiliation, approval or endorsement by the author(s) of the third-party libraries used by this Work.
-
 ## 💪 Contributing
 
-Your contribution is highly appreciated!. If you have any ideas, suggestions, or encounter issues, feel free to open an issue by clicking [here](https://github.com/ElektroStudios/PROJECT_NAME/issues/new/choose). 
+Your contribution is highly appreciated!. If you have any ideas, suggestions, or encounter issues, feel free to open an issue by clicking [here](https://github.com/ElektroStudios/WallPin-Set-Desktop-Wallpaper/issues/new/choose). 
 
 Your input helps make this Work better for everyone. Thank you for your support! 🚀
 
